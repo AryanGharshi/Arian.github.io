@@ -1,0 +1,92 @@
+	main {
+		display: grid;
+		grid-template-columns: 55% 45%;
+		justify-content: stretch;
+		align-items: stretch;
+		grid-template-areas: "title content";
+	}
+
+	header {
+		grid-area: title;
+		margin-top: 85px;
+	}
+
+	header p {
+		font-size: 22px;
+	}
+
+	#welcome-section {
+		border-left: 5px solid;
+		grid-area: content;
+		padding-top: 20px;
+		padding-bottom: 20px;		
+	}
+
+	#welcome-section p {
+		padding-left: 35px;
+		font-size: 18px;
+	}
+
+@media screen and (min-width: 1041px){
+	body {
+		overflow: hidden;
+		
+	}
+
+
+	header {
+		animation-name: header;
+		animation-duration: 2s;
+		width: 100%;
+		animation-fill-mode: forwards;
+	}
+
+	#welcome-section {
+		animation-name: txt;
+		margin-top: 100vh;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+	}
+
+	
+	@keyframes header {
+		0%{
+			margin-left: 25vw;
+		}
+		25%{
+			margin-left: 25vw;
+		}
+		50%{
+			margin-left: 0vw;
+		}
+		100%{
+			margin-left: 0vw;
+		}
+	}
+	
+	@keyframes txt {
+	 	50%{
+	 		margin-top: 100vh;
+	 	}
+		
+		100%{
+			margin-top: 0px;
+		}
+	}
+	
+}
+@media screen and (max-width: 1040px){
+	main {
+		grid-template-columns: 100%;
+		grid-template-rows: 50% 50%;
+		grid-template-areas: 
+		"title"
+		"content";
+	}
+}
+@media screen and (max-width: 500px){
+	nav{
+		flex-direction: column;
+		padding-left: 20px;
+	}	
+

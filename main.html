@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Aryan Gharshi</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link rel="stylesheet" type="text/css" href="css/maincss.css">
+
+	<script>
+		function setCookie(cname, cvalue) {
+			document.cookie = cname + "=" + cvalue+";";
+		}
+
+		function getCookie(cname) {
+			var name = cname + "=";
+			var cookie = document.cookie.split(";");
+
+			for (var i = 0; i < cookie.length; i++) {
+				var c = cookie[i];
+
+				while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				}
+			}
+			return "";
+		}
+
+		function checkCookie() {
+			var visited = getCookie("visited");
+			if (visited != "") {
+				alert("You've been here before");
+			}else{
+				alert("this is your first time here.");
+				setCookie("visited", "y");
+			}
+		}
+	</script>
+
+</head>
+<body>
+
+	<nav id="navbar">
+		<a id="selected" href="main.html">Home</a>
+		<a href="projects.html">Projects</a>
+		<a href="services.html">Services</a>
+		<a href="contact.html">Contact</a>
+	</nav>
+
+	<main>
+	<header>
+
+		<h1>Your <br>website is <br>suboptimal.</h1>
+		<p> Luckily for you, I'm here to help. </p>
+
+	</header>
+	<section id="welcome-section">		
+
+		<p>We are currently in the midst of a technological revolution. Computers are replacing stores, receptions, service and even complete businesses. Will you merely survive the revolution by fitting in and following others steps, or will you use it to your full advantage by daring to present a unique and recognizable web presence?</p>
+		
+		<p>My name is Aryan Gharshi. I am a web developer with a batchelors degree in computer science specializing in webdesign and user experience. My philosophy of design is that form should follow function. Every design choice that I make is based on a function that it will serve. In my opinion, there is nothing less professional than a gimicky website with a ton of fancy bells and whistles that serve no purpose other than looking nice. 
+
+		<p>Hire me if you want not only the text, but every single element of your website to convey your intended message through a modern and fluid user experience that will leave your costumers mesmerized and invested.</p>
+
+	</section>
+	</main>
+	
+</body>
+</html>
