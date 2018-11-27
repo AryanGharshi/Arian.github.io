@@ -17,17 +17,17 @@
 	</nav>
 	<main>
 		<header><h1>Contact</h1></header>
-		<form method="post" name="emailform" action="php/emailForm.php">	
+		<form name="emailform" action="http://formspree.io/aryan.gharshi@gmail.com">	
 			<label for="name"> Name:<span> *</span></label>
 			<input required type="text" name="name">
 				
 			<label for="email"> E-mail:<span> *</span></label>
-			<input required type="email" name="email">
+			<input required type="email" name="_replyto">
 				
 			<label for="message"> Message:<span> *</span></label>
 			<textarea required rows="8" ></textarea>
 
-			<input type="submit" name="submit" id="submit" value="send form">
+			<input type="submit" value="Send" id="submit">
 			
 		</form>
 	</main>
