@@ -9,13 +9,22 @@ nav{
 .dot {
     height: 15px;
     width: 15px;
-
     border: 2px solid #F0E6FE;
     border-radius: 50%;
     display: inline-block;
     margin: 7px;
+    position: relative;
+    right: 0;
+
+    -webkit-transition-property: right;
+    -webkit-transition-duration: 0.2s;
 }
 
 .dot:hover {
     cursor: pointer;
+
+    right: 5px;
+
+    -webkit-transition-property: right;
+    -webkit-transition-duration: 0.2s;
 }

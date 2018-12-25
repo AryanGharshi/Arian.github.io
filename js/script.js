@@ -16,17 +16,14 @@ function displayToggle(id) {
         document.getElementById(id).style.display = "block";
         document.getElementById(selectedDescription).style.display = "none";
         selectedDescription = id;
-        console.log("closed previously selected description. new one: " + selectedDescription);
 
     } else if (selectedDescription === id) {
         document.getElementById(selectedDescription).style.display = "none";
         selectedDescription = null;
-        console.log("you clicked on an already showing description. I closed it. new selected: " + selectedDescription);
 
     } else {
         document.getElementById(id).style.display = "block";
         selectedDescription = id;
-        console.log("no previously selected description. new one: " + selectedDescription);
     }
 }
 
@@ -38,6 +35,28 @@ function highlight(id) {
     } else {
         document.getElementById(id).style.backgroundColor = "#60e8e8";
         selectedDot = id;
+    }
+
+
+}
+
+function scroll() {
+    var scroll = (window.pageYOffset || document.scrollTop)  - (document.clientTop || 0);
+
+    if (scroll < height){
+        highlight("nav1");
+    }
+
+    if (scroll > height){
+        highlight("nav2");
+    }
+
+    if (scroll > (height*1.95)){
+        highlight("nav3");
+    }
+
+    if (scroll > (height*2.95)){
+        highlight("nav4");
     }
 
 
