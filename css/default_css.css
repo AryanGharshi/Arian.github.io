@@ -1,0 +1,158 @@
+/* default values */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(to right top, #15183a, #171846, #1b1752,
+    #22155d, #2c1067, #272077, #1c2e87, #003b96, #0057a6, #0070af, #0788b4, #4d9eb7);
+    max-width: 100%;
+    font-family: Raleway, serif;
+    margin: 0;
+    color: whitesmoke;
+}
+
+/* text selectors */
+p{
+    max-width: 70vw;
+    color: #9BD3D3;
+}
+
+h1 {
+    padding: 2vw 0 200px 30px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    font-size: 3.5vw;
+}
+
+h2 {
+    font-weight: 200;
+    line-height: normal;
+    font-size: 2vw;
+    margin: 0;
+}
+
+.navText{
+    font-size: 1.5vw;
+    color: #4EB8B8;
+}
+
+.description {
+    padding-left: 4vw;
+    margin-top: 0;
+    display: none;
+}
+
+/* Div selectors */
+
+#frontEnd, #backEnd, #testing, #design {
+
+}
+
+.skillList {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: relative;
+}
+.intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5vw;
+}
+
+
+body, section, .navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 0;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    position: relative;
+}
+
+/* illustration selectors */
+
+#portrait{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 4px white solid;
+    position: relative;
+}
+
+.arrow{
+    width: 4vw;
+    height: 3vw;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-name: float;
+    animation-duration: 2s;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 70vw;
+    position: relative;
+    left: 0;
+
+    -webkit-transition-property: left;
+    -webkit-transition-duration: 0.2s;
+}
+
+.icon {
+    height: 3vw;
+    padding-right: 5px;
+    position: relative;
+    top: -5px;
+}
+
+#projects {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 4px white solid;
+    width: 70vw;
+  }
+
+/* functional selectors */
+@keyframes float {
+    0% {
+        bottom: 0.5vw;
+    }
+    50% {
+        bottom: 0vw;
+    }
+    100% {
+        bottom: 0.5vw;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.arrow:hover, .header:hover{
+    cursor: pointer;
+}
+
+.header:hover {
+    left: 40px;
+
+    -webkit-transition-property: left;
+    -webkit-transition-duration: 0.2s;
+}

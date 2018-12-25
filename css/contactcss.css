@@ -1,6 +1,5 @@
 form {
-	background-color: #f2f2f2;
-	padding: 20px;
+    padding: 20px 20px 150px;
 }
 
 
@@ -9,31 +8,28 @@ span{
 }
 
 input, textarea {
-
 	width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #007A7A;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: #D0EFEF;
 }
 
 #submit {
-
 	width: 100%;
-    background-color: black;
-    opacity: 0.7;
+    background-color: #1AB2B2;
+
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-
 }
 
 #submit:hover {
-	background-color: black;
-	opacity: 1;
+	background-color: #007C7C;
 }
