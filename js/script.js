@@ -1,5 +1,6 @@
 var height = window.innerHeight;
-var selectedDescription;
+var selectedDescription = null;
+var selectedDot = null;
 
 
 function move(name) {
@@ -26,13 +27,21 @@ function displayToggle(id) {
         document.getElementById(id).style.display = "block";
         selectedDescription = id;
         console.log("no previously selected description. new one: " + selectedDescription);
+    }
+}
 
-
+function highlight(id) {
+    if (selectedDot !== null && selectedDot !== id) {
+        document.getElementById(selectedDot).style.backgroundColor = 'transparent';
+        document.getElementById(id).style.backgroundColor = "#60e8e8";
+        selectedDot = id;
+    } else {
+        document.getElementById(id).style.backgroundColor = "#60e8e8";
+        selectedDot = id;
     }
 
 
 }
-
 
 
 
