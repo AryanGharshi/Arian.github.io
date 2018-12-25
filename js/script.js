@@ -43,19 +43,19 @@ function highlight(id) {
 function scroll() {
     var scroll = (window.pageYOffset || document.scrollTop)  - (document.clientTop || 0);
 
-    if (scroll < height){
+    if (scroll < (height*0.5)){
         highlight("nav1");
     }
 
-    if (scroll > height){
+    if (scroll >= (height*0.5)){
         highlight("nav2");
     }
 
-    if (scroll > (height*1.95)){
+    if (scroll >= (height*1.5)){
         highlight("nav3");
     }
 
-    if (scroll > (height*2.95)){
+    if (scroll >= (height*2.5)){
         highlight("nav4");
     }
 
