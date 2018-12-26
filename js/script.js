@@ -3,6 +3,7 @@ var selectedDescription = null;
 var selectedDot = null;
 
 
+
 function move(name) {
     var integer = parseInt(name) + 1;
 
@@ -11,20 +12,34 @@ function move(name) {
 }
 
 function displayToggle(id) {
+    var toggleView = document.getElementById(id);
+    var toggleHide = document.getElementById(selectedDescription);
 
     if (selectedDescription != null && selectedDescription !== id) {
+
+        toggleView.classList.toggle('fade');
+        toggleHide.classList.toggle('fade');
+
+        /*
         document.getElementById(id).style.display = "block";
         document.getElementById(selectedDescription).style.display = "none";
+        */
+
         selectedDescription = id;
 
     } else if (selectedDescription === id) {
-        document.getElementById(selectedDescription).style.display = "none";
+
+        toggleHide.classList.toggle('fade');
+        //document.getElementById(selectedDescription).style.display = "none";
         selectedDescription = null;
 
     } else {
-        document.getElementById(id).style.display = "block";
+
+        toggleView.classList.toggle('fade');
+        //document.getElementById(id).style.display = "block";
         selectedDescription = id;
     }
+
 }
 
 function highlight(id) {
@@ -58,9 +73,9 @@ function scroll() {
     if (scroll >= (height*2.5)){
         highlight("nav4");
     }
-
-
 }
+
+
 
 
 

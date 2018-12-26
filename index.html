@@ -9,14 +9,9 @@
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
     <script defer src="js/script.js"></script>
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.slim.js"
-            integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-            crossorigin="anonymous">
-    </script>
     <title>Arian Garshi</title>
 </head>
-<body onscroll="scroll()">
+<body onload="highlight('nav1');" onscroll="scroll()">
 
     <nav>
         <span onclick="move('-1')" class="dot" id="nav1"></span>
@@ -52,12 +47,12 @@
                 </div>
 
                 <p class="description" id="desc0">
-                    With my specialization in web design, I can improve your websites accessibility,
-                    usability and responsibility to help you reach a broader audience and look professional and reliable.
+                    In my opinion, Web design is one of the most overlooked yet most important components of development.
+                    A well designed interface ensures that users get the information that they seek in an enjoyable and intuitive
+                    manner, which analytics have proven to improve customer locality, increase traffic amd generate business.
                     <br><br>
-                    User experience is one of the most important, but often overlooked parts of creating a website that
-                    your audience really enjoys working with, and is able to gain the intended information quickly and
-                    efficiently
+                    With my specialization in Web Design, I am able to stratigize an information arrangement that ensures
+                    responsiveness, accessibility, findability and off course, beauty.
                 </p>
             </li>
             <li id="frontEnd">
@@ -67,9 +62,12 @@
                 </div>
 
                 <p class="description" id="desc1">
-                    With my broad experience working with HTML, CSS and Javascript, I can help you either create a
-                    gorgeous site from scratch, or improve and build upon your already established website that could
-                    use some improvement.
+
+                    I have a firm grasp of HTML, CSS and JavaScript. Although I enjoy writing all code in pure JS, I am able to
+                    make use of tools and frameworks such as BootStrap, jQuery AngularJS to deliver solid and secure code effectively.
+                    <br><br>
+                    I am also experienced in Responsive and Mobile design to ensure that my work runs smoothly on a wide
+                    range of devices
                 </p>
             </li>
             <li id="backEnd">
@@ -79,11 +77,13 @@
                 </div>
 
                 <p class="description" id="desc2">
-                    I am an intermediate Java developer with some experience in Python, SQL, DBMs as well as
-                    Machine Learning. I can help you build simple to advanced applications from scratch, or debug and
-                    improve existing systems.
+                    I am primarily a Java programmer with experience in  advanced algorithms and data structures as well as Jav
+                    JavaEE web applications and web security. I am comfortable working with DBSMs and database management through
+                    SQL.
+                    <br><br>
+                    Through studying Machine Learning, I have also come to gain a good understanding og Python and its uses for
+                    recommender systems and Big Data management.
                 </p>
-                </div>
             </li>
             <li id="testing">
                 <div class="header"  onclick="displayToggle('desc3')">
@@ -92,13 +92,13 @@
                 </div>
 
                 <p class="description" id="desc3">
-                    I am able to do throughout user testing and evaluation to improve any product that involves user
-                    interaction. I have a broad experience conducting process modeling combined with both qualitative
-                    and quantitative data gathering from users to conduct a throughout evaluation.
+                    I am able to do throughout user testing and evaluation to improve the user experience of any product
+                    that involves interaction. I have a broad experience conducting process modeling combined with both qualitative
+                    and quantitative data gathering from users to conduct a throughout research and evaluation.
                     <br><br>
                     By combining user requirements with heuristic expert evaluation, I can ensure that your product
-                    will get a set of concrete goals to remove redundancies, bad flow and gain a highly improved access
-                    to information and user experience.
+                    will get a set of concrete goals to remove redundancies, bad interaction flow and gain a highly improved access
+                    to information for all users including those with disabilities
                 </p>
             </li>
 
@@ -125,7 +125,7 @@
                 <input type="text" name="message" placeholder="Name"/>
                 <input type="email" name="email" placeholder="E-mail">
                 <textarea name="message" placeholder="Message"></textarea>
-                <button type="submit" id="submit">Send Test</button>
+                <button type="submit" id="submit">Submit</button>
             </form>
 
 
@@ -136,6 +136,10 @@
 
 
 
-
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.js"
+            integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+            crossorigin="anonymous">
+    </script>
 </body>
 </html>
