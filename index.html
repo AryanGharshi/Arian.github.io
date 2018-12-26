@@ -2,13 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="css/default_css.css">
     <link rel="stylesheet" type="text/css" href="css/contactcss.css">
     <link rel="stylesheet" type="text/css" href="css/navcss.css">
+
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,400" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
     <script defer src="js/script.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.js"
+            integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+            crossorigin="anonymous">
+    </script>
     <title>Arian Garshi</title>
 </head>
 <body onload="highlight('nav1');" onscroll="scroll()">
@@ -19,10 +28,6 @@
         <span onclick="move('1')" class="dot" id="nav3"></span>
         <span onclick="move('2')" class="dot"  id="nav4"></span>
     </nav>
-
-
-
-
 
     <section class="home" >
         <div class="intro">
@@ -35,8 +40,6 @@
             <img class="arrow" id="0" src="images/arrow.svg" alt="clickable navigation arrow" onclick="move(this.id);">
         </div>
     </section>
-
-
 
     <section class="skills">
         <ul class="skillList">
@@ -132,14 +135,5 @@
             <img class="arrow" id="3" src="images/barrow.svg" alt="clickable navigation arrow" onclick="move('-1')">
         </div>
     </section>
-
-
-
-
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.slim.js"
-            integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-            crossorigin="anonymous">
-    </script>
 </body>
 </html>
