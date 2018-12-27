@@ -18,6 +18,9 @@ input, textarea {
     background-color: #D0EFEF;
 }
 
+textarea {
+    height: 20vh;
+}
 #submit {
 	width: 100%;
     background-color: #1AB2B2;
