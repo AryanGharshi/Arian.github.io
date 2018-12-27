@@ -1,0 +1,104 @@
+@media only screen and (max-width: 700px){
+    .intro{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #portrait{
+        width:  60vw;
+        height: 60vw;
+
+    }
+
+    h1 {
+        padding: 2vw 0 200px 0;
+        font-size: 8.5vw;
+        text-align: center;
+    }
+
+    nav{
+        top: auto;
+        bottom: 0;
+        right: 0;
+    }
+
+    .dot {
+        height: 20px;
+        width: 20px;
+        margin: 3px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    /*skills*/
+
+    h2 {
+        font-size: 6vw;
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+    }
+    p{
+        max-width: 90vw;
+    }
+
+    .skillList {
+        width: 95vw;
+        display: flex;
+        padding: 0 0 0 0;
+        margin-top: 20vh;
+    }
+
+    .icon {
+        height: 10vw;
+        padding-right: 5px;
+        position: relative;
+        top: 1.8vw;
+    }
+
+    .description.fade{
+        font-size: 4vw;
+    }
+
+    form {
+        margin-top: 30vh;
+    }
+
+
+    .mobileItems {
+        display: block;
+    }
+
+}
+
+@media only screen and (min-width: 450px) and (max-width: 700px){}
+
+@media only screen and (min-width: 700px){
+
+    /*navigation*/
+    .dot {
+        -webkit-transition-property: right;
+        -webkit-transition-duration: 0.2s;
+    }
+    .dot:hover {
+        cursor: pointer;
+
+        right: 5px;
+
+        -webkit-transition-property: right;
+        -webkit-transition-duration: 0.2s;
+    }
+
+    /*skills*/
+    .header {
+        padding: 10px;
+        width: 70vw;
+        position: relative;
+        left: 0;
+
+        -webkit-transition-property: left;
+        -webkit-transition-duration: 0.2s;
+    }
+
+}

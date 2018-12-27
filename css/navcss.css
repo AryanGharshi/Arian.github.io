@@ -16,15 +16,10 @@ nav{
     position: relative;
     right: 0;
 
-    -webkit-transition-property: right;
-    -webkit-transition-duration: 0.2s;
+
 }
 
 .dot:hover {
     cursor: pointer;
-
-    right: 5px;
-
-    -webkit-transition-property: right;
-    -webkit-transition-duration: 0.2s;
 }
+
