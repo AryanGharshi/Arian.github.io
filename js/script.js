@@ -2,15 +2,7 @@ var height = window.innerHeight;
 var selectedDescription = null;
 var selectedDot = null;
 
-
-
-function move(name) {
-    var integer = parseInt(name) + 1;
-
-    var scroll = integer * height;
-    window.scrollTo(0, scroll);
-}
-
+/*toggles the visibility of descriptions in the skills section*/
 function displayToggle(id) {
     var toggleView = document.getElementById(id);
     var toggleHide = document.getElementById(selectedDescription);
@@ -19,29 +11,22 @@ function displayToggle(id) {
 
         toggleView.classList.toggle('fade');
         toggleHide.classList.toggle('fade');
-
-        /*
-        document.getElementById(id).style.display = "block";
-        document.getElementById(selectedDescription).style.display = "none";
-        */
-
         selectedDescription = id;
 
     } else if (selectedDescription === id) {
 
         toggleHide.classList.toggle('fade');
-        //document.getElementById(selectedDescription).style.display = "none";
         selectedDescription = null;
 
     } else {
 
         toggleView.classList.toggle('fade');
-        //document.getElementById(id).style.display = "block";
         selectedDescription = id;
     }
 
 }
 
+/*highlights the correct dot based on which one is provided by scroll()*/
 function highlight(id) {
     if (selectedDot !== null && selectedDot !== id) {
         document.getElementById(selectedDot).style.backgroundColor = 'transparent';
@@ -55,6 +40,7 @@ function highlight(id) {
 
 }
 
+/* highlights a dot based on position of user */
 function scroll() {
     var scroll = (window.pageYOffset || document.scrollTop)  - (document.clientTop || 0);
 

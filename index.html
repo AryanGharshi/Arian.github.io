@@ -22,15 +22,14 @@
     <title>Arian Garshi</title>
 </head>
 <body onload="highlight('nav1');" onscroll="scroll()">
-
     <nav>
-        <span onclick="move('-1')" class="dot" id="nav1"></span>
-        <span onclick="move('0')" class="dot"  id="nav2"></span>
-        <span onclick="move('1')" class="dot" id="nav3"></span>
-        <span onclick="move('2')" class="dot"  id="nav4"></span>
+        <span onClick="document.getElementById('home').scrollIntoView();" class="dot" id="nav1"></span>
+        <span onClick="document.getElementById('skills').scrollIntoView();" class="dot"  id="nav2"></span>
+        <span onClick="document.getElementById('projects').scrollIntoView();" class="dot" id="nav3"></span>
+        <span onClick="document.getElementById('contact').scrollIntoView();" class="dot"  id="nav4"></span>
     </nav>
 
-    <section class="home" >
+    <section id="home" >
         <div class="intro">
             <img src="images/portrait1.jpg" id="portrait" alt="portrait picture">
             <h1>Hi. My name is Arian Garshi. I’m a full-stack developer and UX designer</h1>
@@ -42,7 +41,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section id="skills">
         <ul class="skillList">
             <li id="design">
                 <div class="header" onclick="displayToggle('desc0')">
@@ -114,9 +113,9 @@
         </div>
     </section>
 
-    <section class="projects">
-        <h2 class="mobileItems">Projects</h2>
-        <img src="images/projects.png" alt="my glorious thropies" id="projects">
+    <section id="projects">
+        <h2 class="title">Projects</h2>
+        <img src="images/projects.png" alt="my glorious thropies" id="projectsimg">
 
         <div class="navigation">
             <p class="navText">Let's have a chat...</p>
@@ -124,8 +123,8 @@
         </div>
     </section>
 
-    <section class="contact">
-            <h2 class="mobileItems">Contact</h2>
+    <section id="contact">
+            <h2 class="title">Contact</h2>
             <form method="POST" action="https://formspree.io/aryan.gharshi@gmail.com">
                 <input type="text" name="message" placeholder="Name"/>
                 <input type="email" name="email" placeholder="E-mail">
