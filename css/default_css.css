@@ -3,8 +3,10 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: linear-gradient(to right top, #15183a, #171846, #1b1752,
-    #22155d, #2c1067, #272077, #1c2e87, #003b96, #0057a6, #0070af, #0788b4, #4d9eb7);
+    background: rgb(61,25,71);
+    background: linear-gradient(90deg, rgba(61,25,71,1) 0%, rgba(34,10,84,1) 50%, rgba(64,42,17,1) 100%);
+    /*background-image: linear-gradient(to right top, #15183a, #171846, #1b1752,
+    #22155d, #2c1067, #272077, #1c2e87, #003b96, #0057a6, #0070af, #0788b4, #4d9eb7);*/
     max-width: 100%;
     font-family: Raleway, serif;
     margin: 0;
@@ -26,6 +28,7 @@ h1 {
 }
 
 h2 {
+
     font-weight: 200;
     line-height: normal;
     font-size: 2vw;
