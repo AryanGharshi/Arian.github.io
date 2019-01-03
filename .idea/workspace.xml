@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3bf08d0-ba30-4562-abbf-164d4708734b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/css/default_css.css" afterPath="$PROJECT_DIR$/css/default_css.css" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +23,20 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="11" column="68" lean-forward="true" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
+            <state relative-caret-position="562">
+              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+              <folding>
+                <element signature="n#script#2;n#head#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2079">
+              <caret line="90" column="59" lean-forward="false" selection-start-line="90" selection-start-column="59" selection-end-line="90" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -40,8 +55,8 @@
       <file leaf-file-name="mobilecss.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/mobilecss.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            <state relative-caret-position="33">
+              <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -50,8 +65,8 @@
       <file leaf-file-name="default_css.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/default_css.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+            <state relative-caret-position="1095">
+              <caret line="81" column="38" lean-forward="false" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -70,10 +85,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>abso</find>
-      <find>skills</find>
-      <find>display: non</find>
-      <find>jquery</find>
       <find>descript</find>
       <find>descri</find>
       <find>list</find>
@@ -97,9 +108,13 @@
       <find>textarea</find>
       <find>projects</find>
       <find>scrol</find>
-      <find>po</find>
       <find>univers</find>
       <find>h2</find>
+      <find>po</find>
+      <find>fade</find>
+      <find>naviga</find>
+      <find>,</find>
+      <find>.naviga</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,12 +127,12 @@
         <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/css/navcss.css" />
-        <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/css/mobilecss.css" />
         <option value="$PROJECT_DIR$/css/contactcss.css" />
         <option value="$PROJECT_DIR$/css/projectscss.css" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/css/default_css.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -127,8 +142,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1193" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1276" />
+    <option name="y" value="249" />
     <option name="width" value="1243" />
     <option name="height" value="1755" />
   </component>
@@ -171,8 +187,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -231,17 +247,18 @@
       <workItem from="1530920869314" duration="527000" />
       <workItem from="1536740576990" duration="626000" />
       <workItem from="1545693704008" duration="74556000" />
+      <workItem from="1546186150854" duration="3483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75709000" />
+    <option name="totallyTimeSpent" value="79192000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
+    <frame x="1276" y="249" width="1243" height="1755" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27280197" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61298275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -271,8 +288,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/index.html</url>
-          <line>48</line>
-          <properties lambdaOrdinal="-1" />
+          <line>58</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -281,53 +297,13 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.html" />
-    <entry file="file://$PROJECT_DIR$/main.html" />
-    <entry file="file://$PROJECT_DIR$/php/emailForm.php">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="26" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/navcss.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="42" column="45" lean-forward="false" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/contactcss.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding />
+          <folding>
+            <element signature="n#script#2;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -335,14 +311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/default_css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -355,11 +323,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/default_css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html" />
+    <entry file="file://$PROJECT_DIR$/main.html" />
+    <entry file="file://$PROJECT_DIR$/php/emailForm.php" />
+    <entry file="file://$PROJECT_DIR$/contact.html" />
+    <entry file="file://$PROJECT_DIR$/home.html" />
+    <entry file="file://$PROJECT_DIR$/css/navcss.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/contactcss.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2079">
+          <caret line="90" column="59" lean-forward="false" selection-start-line="90" selection-start-column="59" selection-end-line="90" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/projectscss.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mobilecss.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/default_css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="81" column="38" lean-forward="false" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="11" column="68" lean-forward="true" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
-          <folding />
+        <state relative-caret-position="562">
+          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding>
+            <element signature="n#script#2;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

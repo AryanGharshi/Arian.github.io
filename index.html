@@ -21,6 +21,16 @@
             integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
             crossorigin="anonymous">
     </script>
+    <script type="application/ld+json">
+        {
+            "context": "http://schema.org",
+            "@type": "Person",
+            "givenName": "Arian",
+            "familyName": "Garshi",
+            "hasOccupation": "Full-Stack Developer",
+            "affiliation": "University Of Bergen"
+        }
+    </script>
     <title>Arian Garshi</title>
 </head>
 <body onload="scroll();" onscroll="scroll()">
@@ -34,10 +44,10 @@
     <section id="home" >
         <div class="intro">
             <img src="images/portrait1.jpg" id="portrait" alt="portrait picture">
-            <h1>Hi. My name is Arian Garshi. I’m a full-stack developer and UX designer with a bachelors degree in Information Science at the University of Bergen</h1>
+            <p id="introduction">Hi. My name is Arian Garshi. I’m a full-stack developer and UX designer with a bachelors degree in Information Science at the University of Bergen</p>
         </div>
 
-        <div class="navigation">
+        <div class="navigation" id="navbutton1">
             <p class="navText">Let me show you what I can do...</p>
             <img class="arrow" id="0" src="images/arrow.svg" alt="clickable navigation arrow" onClick="document.getElementById('skills').scrollIntoView();">
         </div>
@@ -108,7 +118,7 @@
 
         </ul>
 
-        <div class="navigation">
+        <div class="navigation" id="navbutton2">
             <p class="navText">Take a look at my skills in practice...</p>
             <img class="arrow" id="1" src="images/arrow.svg" alt="clickable navigation arrow" onClick="document.getElementById('projects').scrollIntoView();">
         </div>
@@ -145,7 +155,7 @@
 
 
 
-        <div class="navigation">
+        <div class="navigation" id="navbutton3">
             <p class="navText">Let's have a chat...</p>
             <img class="arrow" id="2" src="images/arrow.svg" alt="clickable navigation arrow" onClick="document.getElementById('contact').scrollIntoView();">
         </div>

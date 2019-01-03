@@ -46,18 +46,54 @@ function scroll() {
 
     if (scroll < (height*0.5)){
         highlight("nav1");
+        document.getElementById('navbutton1').classList.remove('fade');
+        document.getElementById('navbutton2').classList.remove('fade');
+        document.getElementById('navbutton3').classList.remove('fade');
+        /*
+        document.getElementById('navbutton1').style.visibility = "visible";
+        document.getElementById('navbutton2').style.visibility = "visible";
+        document.getElementById('navbutton3').style.visibility = "visible";
+        */
     }
 
-    if (scroll >= (height*0.5)){
+    if (scroll >= (height*0.5) && scroll < (height*1.5)){
         highlight("nav2");
+
+        document.getElementById('navbutton1').classList.add('fade');
+        document.getElementById('navbutton2').classList.remove('fade');
+        document.getElementById('navbutton3').classList.remove('fade');
+        /*
+        document.getElementById('navbutton1').style.visibility = "hidden";
+        document.getElementById('navbutton2').style.visibility = "visible";
+        document.getElementById('navbutton3').style.visibility = "visible";
+        */
     }
 
     if (scroll >= (height*1.5)){
         highlight("nav3");
+
+        document.getElementById('navbutton1').classList.remove('fade');
+        document.getElementById('navbutton2').classList.add('fade');
+        document.getElementById('navbutton3').classList.remove('fade');
+
+        /*
+        document.getElementById('navbutton1').style.visibility = "visible";
+        document.getElementById('navbutton2').style.visibility = "hidden";
+        document.getElementById('navbutton3').style.visibility = "visible";
+        */
     }
 
     if (scroll >= (height*2.5)){
         highlight("nav4");
+
+        document.getElementById('navbutton1').classList.remove('fade');
+        document.getElementById('navbutton2').classList.remove('fade');
+        document.getElementById('navbutton3').classList.add('fade');
+        /*
+        document.getElementById('navbutton1').style.visibility = "visible";
+        document.getElementById('navbutton2').style.visibility = "visible";
+        document.getElementById('navbutton3').style.visibility = "hidden";
+        */
     }
 }
 

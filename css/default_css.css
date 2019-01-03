@@ -19,8 +19,9 @@ p{
     color: #9BD3D3;
 }
 
-h1 {
+#introduction {
     padding: 2vw 0 200px 30px;
+    color: white;
     font-style: normal;
     font-weight: 200;
     line-height: normal;
@@ -71,6 +72,24 @@ h2 {
     -webkit-transition-duration: 0.2s;
 }
 
+.navigation {
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.2s;
+}
+
+.navigation.fade {
+    opacity: 0;
+
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.2s;
+
+}
+
 li{
     max-width: 90vw;
 }
@@ -84,7 +103,7 @@ li{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 4px white solid;
     position: relative;
-    top: 2vw;
+    top: 2.5vw;
 }
 
 .arrow{
@@ -132,11 +151,7 @@ body, section, .navigation{
     align-items: center;
 }
 
-.navigation {
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-}
+
 
 section{
     width: 100vw;
