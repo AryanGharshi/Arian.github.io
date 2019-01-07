@@ -44,21 +44,12 @@ figcaption {
 
 .content {
     background-color: #fefefe;
-
     padding: 0;
     border: 1px solid #888;
     width: 80%;
     height: 60vh;
     display: flex;
     flex-direction: row;
-}
-
-.slideshow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 70px;
-    overflow: hidden
 }
 .pic1, .pic2, .pic3 {
     order: 1;
@@ -69,15 +60,16 @@ figcaption {
     border-right: 4px solid rgba(38, 19, 57, 0.77);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     object-fit: cover;
-    width: 350px;
+    width: 30vw;
     height: 60vh;
 }
 
 .projectInfo {
     order: 2;
     padding: 40px;
-    margin-left: 350px;
+    margin-left: 30vw;
 }
+
 
 .close {
     padding-right: 20px;

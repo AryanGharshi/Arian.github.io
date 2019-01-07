@@ -71,22 +71,29 @@ function scroll() {
     }
 }
 
-var slide;
 
-function toggleModal(projectId) {
+/*displays and hides the modal window */
+var slide;
+var modalActive = false;
+var projectId = null;
+function toggleModal(id) {
+    projectId = id;
     var modal = document.getElementById(projectId);
-    var id = projectId.substring(7, projectId.length);
+    var slideId = projectId.substring(7, projectId.length);
 
     if (modal.style.display === "flex") {
         modal.style.display = "none";
         clearInterval(slide);
+        modalActive=false;
     } else {
         modal.style.display = "flex";
-        slideshow(id)
-        slide = setInterval( function() { slideshow(id); }, 2000 );
+        slideshow(slideId)
+        slide = setInterval( function() { slideshow(slideId); }, 2000 );
+        modalActive = true;
     }
 }
 
+/*runs the slideshow in the modal  box*/
 var init = null;
 
 function slideshow(slideShowId) {
@@ -104,6 +111,15 @@ function slideshow(slideShowId) {
     }
 }
 
+/*active modal box is closed */
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode === 27) {
+        if (modalActive === true) {
+            toggleModal(projectId);
+        }
+    }
+};
 
 
 
