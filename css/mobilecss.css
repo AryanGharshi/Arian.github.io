@@ -4,10 +4,13 @@
         align-items: center;
     }
 
+    #introduction {
+        font-size: 7.5vw;
+    }
+
     #portrait{
         width:  60vw;
         height: 60vw;
-
     }
 
     h1 {
@@ -37,7 +40,6 @@
     }
 
     /*skills*/
-
     h2 {
         font-size: 6vw;
         margin-top: 2vh;

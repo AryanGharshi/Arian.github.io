@@ -8,22 +8,17 @@ function displayToggle(id) {
     var toggleHide = document.getElementById(selectedDescription);
 
     if (selectedDescription != null && selectedDescription !== id) {
-
         toggleView.classList.toggle('fade');
         toggleHide.classList.toggle('fade');
         selectedDescription = id;
-
     } else if (selectedDescription === id) {
 
         toggleHide.classList.toggle('fade');
         selectedDescription = null;
-
     } else {
-
         toggleView.classList.toggle('fade');
         selectedDescription = id;
     }
-
 }
 
 /*highlights the correct dot based on which one is provided by scroll()*/
@@ -49,11 +44,6 @@ function scroll() {
         document.getElementById('navbutton1').classList.remove('fade');
         document.getElementById('navbutton2').classList.remove('fade');
         document.getElementById('navbutton3').classList.remove('fade');
-        /*
-        document.getElementById('navbutton1').style.visibility = "visible";
-        document.getElementById('navbutton2').style.visibility = "visible";
-        document.getElementById('navbutton3').style.visibility = "visible";
-        */
     }
 
     if (scroll >= (height*0.5) && scroll < (height*1.5)){
@@ -62,11 +52,6 @@ function scroll() {
         document.getElementById('navbutton1').classList.add('fade');
         document.getElementById('navbutton2').classList.remove('fade');
         document.getElementById('navbutton3').classList.remove('fade');
-        /*
-        document.getElementById('navbutton1').style.visibility = "hidden";
-        document.getElementById('navbutton2').style.visibility = "visible";
-        document.getElementById('navbutton3').style.visibility = "visible";
-        */
     }
 
     if (scroll >= (height*1.5)){
@@ -75,12 +60,6 @@ function scroll() {
         document.getElementById('navbutton1').classList.remove('fade');
         document.getElementById('navbutton2').classList.add('fade');
         document.getElementById('navbutton3').classList.remove('fade');
-
-        /*
-        document.getElementById('navbutton1').style.visibility = "visible";
-        document.getElementById('navbutton2').style.visibility = "hidden";
-        document.getElementById('navbutton3').style.visibility = "visible";
-        */
     }
 
     if (scroll >= (height*2.5)){
@@ -89,12 +68,31 @@ function scroll() {
         document.getElementById('navbutton1').classList.remove('fade');
         document.getElementById('navbutton2').classList.remove('fade');
         document.getElementById('navbutton3').classList.add('fade');
-        /*
-        document.getElementById('navbutton1').style.visibility = "visible";
-        document.getElementById('navbutton2').style.visibility = "visible";
-        document.getElementById('navbutton3').style.visibility = "hidden";
-        */
     }
+}
+
+function toggleModal(projectId) {
+    var modal = document.getElementById(projectId);
+    var id = projectId.substring(7, projectId.length);
+
+    if (modal.style.display === "flex") {
+        modal.style.display = "none";
+    } else {
+        modal.style.display = "flex";
+        setInterval(slideshow(id), 2000);
+    }
+}
+var init = 0;
+function slideshow(slideShowId) {
+    var slide = document.getElementById("slideshow" + slideShowId); //this should be correct.
+    var interval = init % 3;
+
+
+    console.log("hiding: " + interval);
+    slide.children[interval].style.display = "none";
+    init++;
+    console.log("displaying: " + interval);
+    slide.children[interval].style.display = "block";
 }
 
 

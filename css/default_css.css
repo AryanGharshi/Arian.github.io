@@ -16,12 +16,11 @@ body{
 /* text selectors */
 p{
     max-width: 70vw;
-    color: #9BD3D3;
+    color: white;
 }
 
 #introduction {
     padding: 2vw 0 200px 30px;
-    color: white;
     font-style: normal;
     font-weight: 200;
     line-height: normal;
@@ -36,6 +35,10 @@ h2 {
     margin: 0;
 }
 
+.header h2 {
+    color: #60e8e8;
+}
+
 .title {
     margin: 2vw;
     font-size: 3.5vw;
@@ -43,7 +46,6 @@ h2 {
 
 .navText{
     font-size: 1.5vw;
-    color: #4EB8B8;
 }
 
 .header {
@@ -103,7 +105,7 @@ li{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 4px white solid;
     position: relative;
-    top: 2.5vw;
+    top: 3vw;
 }
 
 .arrow{
@@ -119,17 +121,23 @@ li{
     height: 3vw;
     padding-right: 5px;
     position: relative;
-    top: -5px;
+    top: -3px;
 }
+
+
 
 #projectsimg {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 4px white solid;
     width: 70vw;
 }
+
+figure img {
+    height: 200px;
+    width: auto;
+}
+
 /* Div selectors */
-
-
 .skillList {
     width: 90vw;
     display: flex;

@@ -13,10 +13,11 @@ input, textarea {
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #007A7A;
-    border-radius: 4px;
+    border-radius: 10px;
     box-sizing: border-box;
     background-color: #D0EFEF;
 }
+
 
 textarea {
     height: 20vh;
@@ -29,7 +30,7 @@ textarea {
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
 }
 

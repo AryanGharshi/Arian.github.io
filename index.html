@@ -15,7 +15,7 @@
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
 
-    <script defer src="js/script.js"></script>
+    <script async defer src="js/script.js"></script>
     <script
             src="https://code.jquery.com/jquery-3.3.1.slim.js"
             integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
@@ -127,7 +127,35 @@
     <section id="projects">
         <h2 class="title">Projects</h2>
         <div id="gallery">
+            <figure>
+                <img src="images/projects/bjorgvin/icon.png" alt="Bjørgvin website screenshot" onclick="toggleModal('project0')">
+                <figcaption>Visit Bjorgvin</figcaption>
+                <div class="modal" id="project0">
+                    <div class="content">
+                        <span class="close" onclick="toggleModal('project0')">&times;</span>
 
+                        <div id="slideshow0">
+                            <img src="images/projects/bjorgvin/1.png" class="pic1">
+                            <img src="images/projects/bjorgvin/2.png" class="pic2">
+                            <img src="images/projects/bjorgvin/3.png" class="pic3">
+                        </div>
+                        <div class="projectInfo">
+                            <a href="http://bjorgvin.ariangarshi.com/">Visit Bjørgvin</a>
+                            <p>
+                                This project illustrates a conceptual model of a tourist guide website that guides the user
+                                through historical sites in the city of Bergen in Norway.
+                            </p>
+                            <p>
+                                The idea behind the design was to make sure that the user found any information that the website
+                                offers through a maximum of 3 clicks. The website has been user tested and optimized for
+                                accessibility to ensure that the intended audience which is any tourist visiting the city gets
+                                the information that they need in an intuitive manner.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </figure>
+            <!--
             <figure>
                 <img src="images/empty.png" alt="blank image">
                 <figcaption>[Title]</figcaption>
@@ -140,20 +168,8 @@
                 <img src="images/empty.png" alt="blank image">
                 <figcaption>[Title]</figcaption>
             </figure>
-            <figure>
-                <img src="images/empty.png" alt="blank image">
-                <figcaption>[Title]</figcaption>
-            </figure>
-            <figure>
-                <img src="images/empty.png" alt="blank image">
-                <figcaption>[Title]</figcaption>
-            </figure>
-
-
+            -->
         </div>
-
-
-
 
         <div class="navigation" id="navbutton3">
             <p class="navText">Let's have a chat...</p>
@@ -164,9 +180,9 @@
     <section id="contact">
             <h2 class="title">Contact</h2>
             <form method="POST" action="https://formspree.io/aryan.gharshi@gmail.com">
-                <input type="text" name="message" placeholder="Name"/>
-                <input type="email" name="email" placeholder="E-mail">
-                <textarea name="message" placeholder="Message"></textarea>
+                <input type="text" name="message" placeholder="Name" required/>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <textarea name="message" placeholder="Message" required></textarea>
                 <button type="submit" id="submit">Submit</button>
             </form>
 
