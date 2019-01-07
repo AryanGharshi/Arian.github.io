@@ -89,7 +89,6 @@ h2 {
 
     -webkit-transition-property: opacity;
     -webkit-transition-duration: 0.2s;
-
 }
 
 li{
@@ -125,7 +124,6 @@ li{
 }
 
 
-
 #projectsimg {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 4px white solid;
@@ -159,8 +157,6 @@ body, section, .navigation{
     align-items: center;
 }
 
-
-
 section{
     width: 100vw;
     height: 100vh;
@@ -175,7 +171,7 @@ section{
         bottom: 0.5vw;
     }
     50% {
-        bottom: 0vw;
+        bottom: 0;
     }
     100% {
         bottom: 0.5vw;

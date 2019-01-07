@@ -71,28 +71,37 @@ function scroll() {
     }
 }
 
+var slide;
+
 function toggleModal(projectId) {
     var modal = document.getElementById(projectId);
     var id = projectId.substring(7, projectId.length);
 
     if (modal.style.display === "flex") {
         modal.style.display = "none";
+        clearInterval(slide);
     } else {
         modal.style.display = "flex";
-        setInterval(slideshow(id), 2000);
+        slideshow(id)
+        slide = setInterval( function() { slideshow(id); }, 2000 );
     }
 }
-var init = 0;
+
+var init = null;
+
 function slideshow(slideShowId) {
     var slide = document.getElementById("slideshow" + slideShowId); //this should be correct.
-    var interval = init % 3;
+    var pointer = init % 3; //0
 
-
-    console.log("hiding: " + interval);
-    slide.children[interval].style.display = "none";
-    init++;
-    console.log("displaying: " + interval);
-    slide.children[interval].style.display = "block";
+    if (init == null){
+        slide.children[pointer].style.display = "block";
+        init = 0;
+    } else{
+        slide.children[pointer].style.display = "none";
+        init++;
+        pointer = init % 3;
+        slide.children[pointer].style.display = "block";
+    }
 }
 
 
