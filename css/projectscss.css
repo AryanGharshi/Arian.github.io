@@ -60,14 +60,14 @@ figcaption {
     border-right: 4px solid rgba(38, 19, 57, 0.77);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     object-fit: cover;
-    width: 30vw;
+    width: 40vw;
     height: 80%;
 }
 
 .projectInfo {
     order: 2;
     padding: 40px;
-    margin-left: 30vw;
+    margin-left: 40vw;
     height:80%;
     overflow: auto;
 }
