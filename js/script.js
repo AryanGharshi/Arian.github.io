@@ -60,6 +60,11 @@ function scroll() {
         document.getElementById('navbutton1').classList.remove('fade');
         document.getElementById('navbutton2').classList.add('fade');
         document.getElementById('navbutton3').classList.remove('fade');
+
+        /*deselects any description that may be open after scrolling past projects section*/
+        if (selectedDescription != null) {
+            displayToggle(selectedDescription);
+        }
     }
 
     if (scroll >= (height*2.5)){

@@ -12,8 +12,9 @@
     }
 
     #portrait{
-        width:  60vw;
-        height: 60vw;
+        width:  200px;
+        height: 200px;
+        margin-top: 40px;
     }
 
     h1 {
@@ -98,7 +99,7 @@
         padding-right: 20px;
         order: 1;
         position: relative;
-        top: -12vh;
+        top: -22vh;
         left: 87vw;
 
 
