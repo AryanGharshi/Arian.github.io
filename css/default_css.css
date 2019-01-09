@@ -51,21 +51,15 @@ h2 {
 
 .header {
     display: flex;
+    padding: 0;
     flex-direction: row;
 }
 
 .description {
-
     padding-left: 10vw;
     margin: 0;
     opacity: 0;
     font-size: 0.1vw;
-
-    /*
-    -webkit-transition-property: opacity, font-size;
-    -webkit-transition-duration: 0.2s;
-    */
-
 }
 
 .description.fadeOut{
@@ -120,6 +114,7 @@ h2 {
     50%{
         opacity: 0;
         font-size: 1vw;
+
     }
     100%{
         opacity: 0;

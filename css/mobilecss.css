@@ -125,28 +125,15 @@
 @media only screen and (min-width: 700px){
 
     /*navigation*/
-    .dot {
-        -webkit-transition-property: right;
-        -webkit-transition-duration: 0.2s;
-    }
     .dot:hover {
         cursor: pointer;
-
-        right: 5px;
-
-        -webkit-transition-property: right;
-        -webkit-transition-duration: 0.2s;
     }
 
     /*skills*/
     .header {
-        padding: 10px;
+        padding: 10px 10px 0 10px;
         width: 70vw;
         position: relative;
-        left: 0;
-
-        -webkit-transition-property: left;
-        -webkit-transition-duration: 0.2s;
     }
 
 }
