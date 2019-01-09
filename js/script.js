@@ -3,59 +3,28 @@ var height = window.innerHeight;
 
 
 /*toggles the visibility of descriptions in the skills section*/
-var selectedDescription = null; //may not need if "showing" works
+var selectedDescription = null;
 var showing = false;
 
 function displayToggle(id) {
-    var desc = document.getElementById(id); //the description that was clicked
+    var desc = document.getElementById(id);
 
     if (showing === false){
-        console.log("no description was active. activating " + desc.id);
-
-        showing = true;
         selectedDescription = desc;
         selectedDescription.classList.add("fadeIn");
+        showing = true;
     }
     else if (selectedDescription === desc) {
-
-        console.log("you clicked on the active description. closing: " + desc.id );
-
         selectedDescription.classList.remove("fadeIn");
         selectedDescription.classList.add("fadeOut");
-
         showing = false;
-
-    }else {
-        console.log("you clicked on + " +  desc.id + "while " + selectedDescription.id + " was active. toggling their view");
-
+    }
+    else {
         selectedDescription.classList.remove("fadeIn");
         selectedDescription.classList.add("fadeOut");
-
-
         desc.classList.add("fadeIn");
         selectedDescription = desc;
     }
-
-    /*
-    var toggleHide = document.getElementById(selectedDescription);
-
-    if (selectedDescription != null && selectedDescription !== id) {
-        toggleView.classList.remove('fadeOut');
-        toggleView.classList.add('fadeIn');
-
-        toggleHide.classList.remove('fadeIn');
-        toggleHide.classList.add('fadeOut');
-        selectedDescription = id;
-    } else if (selectedDescription === id) {
-        toggleHide.classList.remove('fadeOut');
-        toggleHide.classList.add('fadeIn');
-        selectedDescription = null;
-    } else {
-        toggleView.classList.add('fadeOut');
-        toggleView.classList.remove('fadeIn');
-        selectedDescription = id;
-    }
-    */
 }
 
 /*highlights the correct dot based on which one is provided by scroll()*/
@@ -120,6 +89,7 @@ function scroll() {
 var slide;
 var modalActive = false;
 var projectId = null;
+
 function toggleModal(id) {
     projectId = id;
     var modal = document.getElementById(projectId);
