@@ -12,6 +12,7 @@ function displayToggle(id) {
     if (showing === false){
         selectedDescription = desc;
         selectedDescription.classList.add("fadeIn");
+        selectedDescription.classList.remove("fadeOut");
         showing = true;
     }
     else if (selectedDescription === desc) {
@@ -22,6 +23,7 @@ function displayToggle(id) {
     else {
         selectedDescription.classList.remove("fadeIn");
         selectedDescription.classList.add("fadeOut");
+        desc.classList.remove("fadeOut");
         desc.classList.add("fadeIn");
         selectedDescription = desc;
     }

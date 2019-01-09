@@ -78,11 +78,25 @@ h2 {
     animation-name: fadeIn;
     animation-duration: 0.8s;
     animation-fill-mode: forwards;
-    /*
-    -webkit-transition-property: opacity, font-size;
-    -webkit-transition-duration: 0.8s;
-    */
 }
+
+.navigation {
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.navigation.fade {
+    animation-name: fadeOut;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
 @keyframes fadeIn {
     0%{
         opacity: 0;
@@ -96,7 +110,6 @@ h2 {
         opacity: 1;
         font-size: 1vw;
     }
-
 }
 
 @keyframes fadeOut {
@@ -113,23 +126,6 @@ h2 {
         font-size: 1px;
     }
 
-}
-
-.navigation {
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    opacity: 1;
-
-    -webkit-transition-property: opacity;
-    -webkit-transition-duration: 0.2s;
-}
-
-.navigation.fade {
-    opacity: 0;
-
-    -webkit-transition-property: opacity;
-    -webkit-transition-duration: 0.2s;
 }
 
 li{
