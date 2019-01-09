@@ -1,27 +1,66 @@
 var height = window.innerHeight;
-var selectedDescription = null;
-var selectedDot = null;
+
+
 
 /*toggles the visibility of descriptions in the skills section*/
+var selectedDescription = null; //may not need if "showing" works
+var showing = false;
+
 function displayToggle(id) {
-    var toggleView = document.getElementById(id);
+    var desc = document.getElementById(id); //the description that was clicked
+
+    if (showing === false){
+        console.log("no description was active. activating " + desc.id);
+
+        showing = true;
+        selectedDescription = desc;
+        selectedDescription.classList.add("fadeIn");
+    }
+    else if (selectedDescription === desc) {
+
+        console.log("you clicked on the active description. closing: " + desc.id );
+
+        selectedDescription.classList.remove("fadeIn");
+        selectedDescription.classList.add("fadeOut");
+
+        showing = false;
+
+    }else {
+        console.log("you clicked on + " +  desc.id + "while " + selectedDescription.id + " was active. toggling their view");
+
+        selectedDescription.classList.remove("fadeIn");
+        selectedDescription.classList.add("fadeOut");
+
+
+        desc.classList.add("fadeIn");
+        selectedDescription = desc;
+    }
+
+    /*
     var toggleHide = document.getElementById(selectedDescription);
 
     if (selectedDescription != null && selectedDescription !== id) {
-        toggleView.classList.toggle('fade');
-        toggleHide.classList.toggle('fade');
+        toggleView.classList.remove('fadeOut');
+        toggleView.classList.add('fadeIn');
+
+        toggleHide.classList.remove('fadeIn');
+        toggleHide.classList.add('fadeOut');
         selectedDescription = id;
     } else if (selectedDescription === id) {
-
-        toggleHide.classList.toggle('fade');
+        toggleHide.classList.remove('fadeOut');
+        toggleHide.classList.add('fadeIn');
         selectedDescription = null;
     } else {
-        toggleView.classList.toggle('fade');
+        toggleView.classList.add('fadeOut');
+        toggleView.classList.remove('fadeIn');
         selectedDescription = id;
     }
+    */
 }
 
 /*highlights the correct dot based on which one is provided by scroll()*/
+
+var selectedDot = null;
 function highlight(id) {
     if (selectedDot !== null && selectedDot !== id) {
         document.getElementById(selectedDot).style.backgroundColor = 'transparent';

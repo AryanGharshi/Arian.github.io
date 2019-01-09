@@ -61,18 +61,58 @@ h2 {
     opacity: 0;
     font-size: 0.1vw;
 
-
+    /*
     -webkit-transition-property: opacity, font-size;
     -webkit-transition-duration: 0.2s;
+    */
 
 }
 
-.description.fade{
+.description.fadeOut{
+    animation-name: fadeOut;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+.description.fadeIn{
 
-    font-size: 1vw;
-    opacity: 1;
+    animation-name: fadeIn;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    /*
     -webkit-transition-property: opacity, font-size;
-    -webkit-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.8s;
+    */
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        font-size: 1px;
+    }
+    50%{
+        opacity: 0;
+        font-size: 1vw;
+    }
+    100%{
+        opacity: 1;
+        font-size: 1vw;
+    }
+
+}
+
+@keyframes fadeOut {
+    0%{
+        opacity: 1;
+        font-size: 1vw;
+    }
+    50%{
+        opacity: 0;
+        font-size: 1vw;
+    }
+    100%{
+        opacity: 0;
+        font-size: 1px;
+    }
+
 }
 
 .navigation {
