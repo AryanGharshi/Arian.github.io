@@ -70,8 +70,8 @@ function scroll() {
         document.getElementById('navbutton3').classList.remove('fade');
 
         /*deselects any description that may be open after scrolling past projects section*/
-        if (selectedDescription != null) {
-            displayToggle(selectedDescription);
+        if (showing === true){
+            displayToggle(selectedDescription.id);
         }
     }
 
@@ -101,7 +101,7 @@ function toggleModal(id) {
         modalActive=false;
     } else {
         modal.style.display = "flex";
-        slideshow(slideId)
+        slideshow(slideId);
         slide = setInterval( function() { slideshow(slideId); }, 2000 );
         modalActive = true;
     }
