@@ -67,9 +67,39 @@
         top: 1.8vw;
     }
 
-    .description.fade{
-        font-size: 4vw;
+    /*
+
+    @keyframes fadeIn {
+        0%{
+            opacity: 0;
+            font-size: 1px;
+        }
+        50%{
+            opacity: 0;
+            font-size: 1vw;
+        }
+        100%{
+            opacity: 1;
+            font-size: 3.5vw;
+        }
     }
+
+    @keyframes fadeOut {
+        0%{
+            opacity: 1;
+            font-size: 3.5vw;
+        }
+        50%{
+            opacity: 0;
+            font-size: 1vw;
+
+        }
+        100%{
+            opacity: 0;
+            font-size: 1px;
+        }
+
+    }*/
 
     form {
         margin-top: 30vh;
